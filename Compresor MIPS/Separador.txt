@@ -1,0 +1,6 @@
+# Agregar sentencia ~ en Diccionario
+	li $v0, 15				# System call for write to a file
+	move $a0, $s2			# Restore file descriptor (open for writing)
+	la $a1, sentence		# Address of buffer from which to write
+	li $a2, 1				# Number of characters to write
+	syscall

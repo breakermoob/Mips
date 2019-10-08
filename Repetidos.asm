@@ -1,10 +1,10 @@
 			.data
-array1:		.word	
+array1:		.word	3, 2, 1, 0, 1, 2
 array2:		.word	
 			.text
 start:		
 			la		$a0, array1		#  Direccion de repetidos
-			addi		$a1, $zero, 0#array1 Length
+			addi		$a1, $zero, 0		#array1 Length
 			la		$a3, array2		#Direccion del nuevo vector
 			jal		search
 
